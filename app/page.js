@@ -40,7 +40,7 @@ export default function PantryManager() {
         <Grid container spacing={3}>
           <PantryHeader
             onAddItem={() => setOpen(true)}
-            // onUploadReceipt={() => setOpen2(true)}
+            onUploadReceipt={() => setOpen2(true)}
           />
           <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
           <PantryItemList
@@ -54,11 +54,11 @@ export default function PantryManager() {
         handleClose={() => setOpen(false)}
         updatePantry={updatePantry}
       />
-      {/* <ReceiptUploadDialog
+      <ReceiptUploadDialog
         open={open2}
         handleClose={() => setOpen2(false)}
         updatePantry={updatePantry}
-      /> */}
+      />
     </Box>
   );
 }

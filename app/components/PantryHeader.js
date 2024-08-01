@@ -17,13 +17,13 @@ export default function PantryHeader({ onAddItem, onUploadReceipt }) {
         >
           Add New Item
         </Button>
-        {/* <Button
+        <Button
           variant="contained"
           onClick={onUploadReceipt}
           sx={{ backgroundColor: "#3f51b5", marginLeft: 2 }}
         >
           Input Grocery Receipt
-        </Button> */}
+        </Button>
       </Grid>
     </>
   );
